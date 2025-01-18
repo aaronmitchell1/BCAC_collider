@@ -2,7 +2,7 @@
 
 input_file="icogs_onco_gwas_meta_overall_breast_cancer_summary_level_statistics.txt"
 output_file="output_file.txt"
-columns="SNP.Onco chr.Onco Position.Onco beta.Onco SE.Onco Effect.Gwas Baseline.Gwas Freq.Gwas"
+columns="SNP.Onco chr.Onco Position.Onco beta.Onco SE.Onco Effect.Gwas Baseline.Gwas Freq.Gwas P.value.Gwas"
 
 awk -v OFS='\t' -v cols="$columns" '
     BEGIN {
